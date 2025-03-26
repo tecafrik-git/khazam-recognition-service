@@ -18,5 +18,8 @@ services:
       - db
     networks:
       - db_network
+    command: python server.py
+    ports:
+      - "9002:9002"
 networks:
   db_network:
